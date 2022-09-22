@@ -16,14 +16,16 @@ int IntervalNaturalNumbers(int m, int n)
     if (m == n)
     {
         return n;
-    }  
+    }
     else if (m > n)
     {
         Console.Write($"{IntervalNaturalNumbers(m, n + 1)}, ");
         return n;
     }
     else
+    {
         Console.Write($"{IntervalNaturalNumbers(m, n - 1)}, ");
+    }
     return n;
 }
 
